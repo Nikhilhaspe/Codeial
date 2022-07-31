@@ -2,6 +2,7 @@ const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
 const express = require("express");
 const app = express();
+const db = require("./config/mongoose");
 const PORT = 8000;
 
 // Set Styles To Main Layout
