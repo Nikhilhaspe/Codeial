@@ -4,12 +4,16 @@ const express = require("express");
 const app = express();
 const PORT = 8000;
 
+// Set Styles To Main Layout
+app.set("layout extractStyles", true);
+app.set("layout extractScripts", true);
+// Static Files
+app.use(express.static(path.join(__dirname, "assets")));
 // Set Express Layouts
 app.use(expressLayouts);
 // View Engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-// Static Files
 
 // For Routing (Find by deault index.js)
 app.use("/", require("./routes"));
