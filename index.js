@@ -3,7 +3,13 @@ const expressLayouts = require("express-ejs-layouts");
 const express = require("express");
 const app = express();
 const db = require("./config/mongoose");
+const cookieParser = require("cookie-parser");
 const PORT = 8000;
+
+app.use(express.urlencoded());
+
+// Cookie Parser
+app.use(cookieParser());
 
 // Set Styles To Main Layout
 app.set("layout extractStyles", true);
