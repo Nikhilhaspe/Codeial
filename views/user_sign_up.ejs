@@ -1,14 +1,22 @@
-<h1>SIGN UP</h1>
+<link rel="stylesheet" href="/css/signup.css">
 
-<form method="POST" action="/users/create">
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <input type="password" name="password" placeholder="Your Password" required />
-  <input
-    type="password"
-    name="confirm_password"
-    placeholder="Confirm Your Password"
-    required
-  />
-  <button type="submit">Sign UP</button>
-</form>
+<div class="wrapper">
+  <h1>Create new account</h1>
+  <form method="POST" action="/users/create">
+    <div class="form-wrapper">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="password" name="password" placeholder="Your Password" required />
+      <input
+        type="password"
+        name="confirm_password"
+        placeholder="Confirm Your Password"
+        required
+      />
+    </div>
+    <button type="submit">Sign Up</button>
+    <div id="create-account">
+      already have an account? <a href="/users/sign-in">Sign in</a> now
+    </div>
+  </form>
+</div>

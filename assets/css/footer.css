@@ -1,0 +1,14 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  footer div {
+    margin-top: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: skyblue;
+    font-size: 18px; }

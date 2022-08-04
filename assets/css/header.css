@@ -1,0 +1,22 @@
+header {
+  background-color: skyblue;
+  color: white;
+  padding: 0px 20px; }
+  header #wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header #wrapper a {
+      color: white;
+      text-decoration: none; }
+  header #navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; }
+    header #navbar li {
+      list-style-type: none;
+      font-size: 20px; }
+      header #navbar li a {
+        color: white;
+        text-decoration: none; }
